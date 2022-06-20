@@ -36,9 +36,10 @@ namespace Doacao
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -59,10 +60,10 @@ namespace Doacao
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Font = new System.Drawing.Font("Futura Bk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(179, 137);
+            this.label2.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(368, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 37);
+            this.label2.Size = new System.Drawing.Size(61, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome";
             // 
@@ -71,12 +72,12 @@ namespace Doacao
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Futura Bk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(179, 219);
+            this.label3.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(368, 210);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 37);
+            this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "CPF";
+            this.label3.Text = "Email";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
@@ -84,10 +85,10 @@ namespace Doacao
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Window;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Futura Bk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(179, 303);
+            this.label4.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(352, 295);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 37);
+            this.label4.Size = new System.Drawing.Size(82, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefone";
             // 
@@ -96,48 +97,62 @@ namespace Doacao
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Futura Bk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(179, 389);
+            this.label5.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(349, 381);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 37);
+            this.label5.Size = new System.Drawing.Size(88, 24);
             this.label5.TabIndex = 4;
-            this.label5.Text = "CEP";
+            this.label5.Text = "Endereço";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Futura Bk BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(179, 172);
+            this.textBox1.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(169, 152);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(479, 33);
+            this.textBox1.Size = new System.Drawing.Size(479, 30);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Futura Bk BT", 15.75F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(179, 254);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(477, 33);
-            this.maskedTextBox1.TabIndex = 6;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
-            // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Futura Bk BT", 15.75F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(179, 338);
+            this.maskedTextBox2.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(169, 318);
+            this.maskedTextBox2.Mask = "(99) 99999-9999";
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(477, 33);
+            this.maskedTextBox2.Size = new System.Drawing.Size(477, 30);
             this.maskedTextBox2.TabIndex = 7;
             this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
-            // maskedTextBox3
+            // button1
             // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Futura Bk BT", 15.75F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(179, 424);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(479, 33);
-            this.maskedTextBox3.TabIndex = 8;
-            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
+            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Font = new System.Drawing.Font("Futura Bk BT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(334, 477);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 47);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Concluir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(169, 233);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(478, 30);
+            this.textBox2.TabIndex = 9;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Futura Bk BT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(169, 404);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(478, 30);
+            this.textBox3.TabIndex = 11;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Form1
             // 
@@ -146,9 +161,10 @@ namespace Doacao
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(806, 536);
-            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -156,9 +172,11 @@ namespace Doacao
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(822, 575);
             this.MinimumSize = new System.Drawing.Size(822, 575);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -174,9 +192,10 @@ namespace Doacao
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

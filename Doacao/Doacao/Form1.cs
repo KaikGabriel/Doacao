@@ -12,9 +12,12 @@ namespace Doacao
 {
     public partial class Form1 : Form
     {
+        DAOPessoa pessoa;
         public Form1()
         {
             InitializeComponent();
+            pessoa = new DAOPessoa();//Abrindo conexao com bd
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -52,10 +55,6 @@ namespace Doacao
 
         }//Textbox Nome
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }//MaskedTXT CPF
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
@@ -63,9 +62,45 @@ namespace Doacao
         }//Maskedtxt TELEFONE
 
 
-        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
-        }//MasketTXT CEP
+        }//TXT Email
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }//TXT Endereco
+
+
+
+
+
+
+
+
+
+        /////////////////////////////BOTÃO
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = textBox1.Text;
+            string email = textBox2.Text;
+            string telefone = maskedTextBox2.Text;
+            string endereco = textBox3.Text;
+
+
+            pessoa.Inserir(nome, email, telefone, endereco);
+
+
+            this.Visible = false;
+            Doacao OutroForm = new Doacao();
+            OutroForm.ShowDialog();
+            
+        }//Botão concluir
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }//Fim da classe
 }//Fim do projeto
